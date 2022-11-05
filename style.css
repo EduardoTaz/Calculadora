@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fundo { /*Chama a div com nome "fundo" que criei, que seria o fundo da calculadora*/
+    background-image: linear-gradient(20deg, black, grey); /*Cria um degradê que vai do preto para o vermelho com 45 graus*/
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.calculadora {
+    background-color: rgba(0, 0, 0, 0.800);
+    position: absolute; /*Faz com que a div ocupe o próprio espaço*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Deixa a div realmente centralizada no meio da tela, removendo 50% do eixo X e 5-% do eixo Y*/
+    border-radius: 15px; /*Arrendonda as bordas*/
+    padding: 15px;
+}
+
+.botao {
+    width: 58px;
+    height: 58px;
+    font-size: 26px;
+    cursor: pointer; /*Faz com que quando passar o mouse em cima do botão mude o cursor para aquela mãozinha*/
+    margin: 1.5px;
+    background-color: #1f1f1f;
+    border: none; /*Tira as bordas dos botões, deixando-os colados um no outro*/
+    color: #fff;
+}
+
+.botao:hover {
+    background-color: black; /*Vai fazer com que quando passar o cursor em cima ele mude a cor para preto*/
+}
+
+#resultado {
+    background-color: #fff;
+    width: 219px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+    position: relative;
+    left: 7px;
+}
